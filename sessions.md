@@ -10,8 +10,7 @@ Response
 ```
 { status: 200, id }
 ```
-
-
+Срок действия - 1 неделя.
 
 ### GET /sessions/:sessionID
 Response
