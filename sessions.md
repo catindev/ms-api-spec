@@ -1,21 +1,27 @@
 # Сессии
 Хранилище токенов для доступа к остальным эндпоинтам. АПИ для авторизации, аутентификации и вот этого всего.
 
-`POST /sessions`
+### POST /sessions
 Body
-```{ login, password }```
+```
+{ login, password }
+```
 Response
-```{ status: 200, id }```
+```
+{ status: 200, id }
+```
 
 
 
-`GET /sessions/:sessionID`
+### GET /sessions/:sessionID
 Response
-```{ status: 200, username, type }```
-где type = user, admin, partner
-Автоматически продлевается при каждом вызове
+```
+{ status: 200, username, type }
+```
+Где type = user, admin, partner. Автоматически продлевается при каждом вызове
 
-
-`DELETE /sessions/:sessionID`
+### DELETE /sessions/:sessionID
 Response
-```{ status: 200 }```
+```
+{ status: 200 }
+```
